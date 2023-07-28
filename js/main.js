@@ -134,7 +134,3 @@ window.addEventListener("load",()=>{
     const loader=document.querySelector(".loader");
     loader.classList.add("loaditem");
 })
-window.addEventListener("transitionend",()=>{
-    const loader=document.querySelector(".loader");
-    loader.remove();
-})
