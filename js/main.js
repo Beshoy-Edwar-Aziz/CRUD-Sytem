@@ -119,7 +119,7 @@ function check(input){
     return regex.test(input);
 }
 function checkdesc(input){
-    var regex=/^[a-zA-Z0-9]{2,}$/
+    var regex=/^[a-zA-Z0-9 ]{2,}$/
     return regex.test(input);
 }
 function checkprice(input){
