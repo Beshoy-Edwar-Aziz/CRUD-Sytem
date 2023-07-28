@@ -115,7 +115,7 @@ function updateProduct(){
     document.getElementById('updateBtn').style.display="none"
 }
 function check(input){
-    var regex=/^[A-Z][a-zA-Z0-9]{2,}$/
+    var regex=/^[A-Z][a-zA-Z0-9 ]{2,}$/
     return regex.test(input);
 }
 function checkdesc(input){
