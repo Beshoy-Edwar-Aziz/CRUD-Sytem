@@ -1,0 +1,53 @@
+h1::after{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: #109299;
+    top: 100%;
+    left: 0;
+    margin-top: 5px;
+}
+.loader{
+    width: 100vw;
+    height: 100vh;
+    background-color: #fff;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    transition: opacity,visibility 1s,1s;
+}
+.loaditem{
+    opacity: 0;
+    visibility: hidden;
+}
+.loader::after{
+    content: "";
+    width: 75px;
+    height: 75px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    border: 15px solid #ddd;
+    border-top-color: #000;
+    border-radius: 50%;
+    animation: open 0.75s ease infinite;
+}
+@keyframes open{
+    from{
+        transform: rotate(0turn);
+    }
+    to{
+        transform: rotate(1turn);
+    }
+}
+#updateBtn{
+    display: none;
+}
+span{
+    background-color: chocolate;
+}
+#nameMsg,#nameMsg2,#nameMsg3,#nameMsg4{
+    display: none;
+}

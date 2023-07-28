@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="loader"></div>
+    <div class="mainbody">
+        <div class="container p-5 bg-body-secondary shadow-lg d-flex justify-content-center align-items-center flex-column">
+            <h1 class="fw-light position-relative">CRUD SYSTEM</h1>
+            <input type="text" class="form-control my-3" id="productName" placeholder="Product Name">
+            <div id="nameMsg" class="form-control mb-3 bg-danger"><i class="fa-solid fa-circle-exclamation text-light"></i> Name isn't Correct Should Start With a Capital Letter</div>
+            <input type="number" class="form-control mb-3" id="productPrice" placeholder="Product Price">
+            <div id="nameMsg2" class="form-control mb-3 bg-danger"><i class="fa-solid fa-circle-exclamation text-light"></i> Must Fill The Field</div>
+            <textarea id="prodDesc" cols="10s" class="form-control mb-2" placeholder="Product Description" rows="4"></textarea>
+            <div id="nameMsg3" class="form-control mb-3 bg-danger"><i class="fa-solid fa-circle-exclamation text-light"></i> Must Fill The Field</div>
+            <input type="text" class="form-control" placeholder="Product Image" id="ProductImg">
+            <div id="nameMsg4" class="form-control mb-3 bg-danger"><i class="fa-solid fa-circle-exclamation text-light"></i> Must Write The Path Correctly example:images/clock1.jpg</div>
+            <button class="btn btn-outline-dark align-self-start mt-3" id="addBtn" onclick="addProduct()">Add Product</button>
+            <button class="btn btn-outline-dark align-self-start mt-3" id="updateBtn" onclick="updateProduct()">Update Product</button>
+            <input type="search" onkeyup="search(this.value)" placeholder="Search..." class="form-control w-25">
+
+        </div>
+    </div>
+    <div class="showingtable">
+        <div class="container">
+        <div class="row mt-3 gy-3" id="displayProducts">
+            
+        </div>
+    </div>
+    </div>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
